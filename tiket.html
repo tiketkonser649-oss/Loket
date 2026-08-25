@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="description" content="Pembelian tiket resmi Jatinangor Music Fest IKA UNPAD - 19 September 2026 di Lapangan Merah UNPAD. Presale 1-3 habis terjual, tiket Normal mulai Rp120.000. Aman & terpercaya hanya di ETATIX.">
+<title>Beli Tiket - Jatinangor Music Fest IKA UNPAD | ETATIX</title>
+<link rel="canonical" href="https://etatix.co.id/tiket.html">
+<meta property="og:title" content="Beli Tiket - Jatinangor Music Fest IKA UNPAD | ETATIX">
+<meta property="og:description" content="Jatinangor Music Fest IKA UNPAD. Sabtu, 19 September 2026 di Lapangan Merah UNPAD, Jatinangor. Tiket Normal mulai Rp120.000.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://etatix.co.id/tiket.html">
+<meta property="og:image" content="https://etatix.co.id/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beli Tiket - Jatinangor Music Fest IKA UNPAD | ETATIX">
+<meta name="twitter:description" content="Jatinangor Music Fest IKA UNPAD. Sabtu, 19 September 2026 di Lapangan Merah UNPAD, Jatinangor. Tiket Normal mulai Rp120.000.">
+<meta name="twitter:image" content="https://etatix.co.id/banner.png">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+body{font-family:'Poppins',sans-serif;background:#F7F8FC;color:#121318;padding-bottom:calc(120px + env(safe-area-inset-bottom,0px));-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased}
+
+a:focus-visible,button:focus-visible{outline:3px solid #3160F4;outline-offset:3px}
+
+.container{width:100%;max-width:480px;margin:0 auto;background:#fff;min-height:100vh;min-height:100dvh;box-shadow:0 0 40px rgba(18,19,24,.05);position:relative}
+
+/* --- NAVBAR PUTIH --- */
+.app-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 12px rgba(18,19,24,.07)}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+
+.nav-btn{width:40px;height:40px;border-radius:50%;background:#F7F8FC;border:1px solid #E5E7EB;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,border-color .2s,transform .15s;color:#121318;text-decoration:none;flex-shrink:0}
+
+.nav-btn:hover{background:#DCE7FF;border-color:#DCE7FF;color:#0C2C91;transform:translateY(-1px)}
+.nav-btn:active{transform:scale(.93)}
+
+.nav-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.topbar-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+
+.logo-img{width:32px;height:32px;border-radius:8px;object-fit:cover;box-shadow:0 2px 8px rgba(18,19,24,.12)}
+
+.logo-text{font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#0C2C91}
+
+/* --- PROGRESS --- */
+.progress{position:relative;padding:14px 28px 18px;border-top:1px solid #E5E7EB;background:#fff}
+
+.progress-inner{position:relative}
+
+.progress-track{position:absolute;top:14px;left:15px;right:15px;height:3px;background:#E5E7EB;border-radius:999px;z-index:1}
+
+.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#FDF5A6,#FCE28A 40%,#D4AF37 70%,#B8861A);border-radius:999px;transition:width .7s cubic-bezier(.4,0,.2,1)}
+
+.progress-steps{position:relative;z-index:2;display:flex;justify-content:space-between;list-style:none}
+
+.step{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+
+.step-dot{width:30px;height:30px;border-radius:50%;background:#F7F8FC;border:1.5px solid #E5E7EB;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:rgba(18,19,24,.45);transition:all .3s;position:relative}
+
+.step-num{display:block;line-height:1}
+
+.step-check{display:none;width:14px;height:14px;stroke:#5C4405;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+
+.step.completed .step-dot{background:linear-gradient(180deg,#FDF5A6 0%,#FCE28A 30%,#D4AF37 50%,#AA771C 60%,#FDF5A6 100%);border-color:#D4AF37;color:#5C4405;box-shadow:0 3px 10px rgba(212,175,55,.4)}
+
+.step.completed .step-num{display:none}
+.step.completed .step-check{display:block}
+
+.step.active .step-dot{background:linear-gradient(180deg,#5B8AFF,#3160F4);border-color:#3160F4;color:#fff;box-shadow:0 0 0 4px rgba(49,96,244,.18),0 4px 14px rgba(49,96,244,.4);animation:stepPulse 2.2s ease-in-out infinite}
+
+.step.active .step-dot::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1.5px solid rgba(49,96,244,.4);animation:stepRing 2.2s ease-out infinite}
+
+@keyframes stepPulse{0%,100%{box-shadow:0 0 0 4px rgba(49,96,244,.18),0 4px 14px rgba(49,96,244,.4)}50%{box-shadow:0 0 0 8px rgba(49,96,244,.1),0 4px 20px rgba(49,96,244,.6)}}
+@keyframes stepRing{0%{transform:scale(.85);opacity:.85}100%{transform:scale(1.5);opacity:0}}
+
+.step-label{font-size:10px;font-weight:700;color:rgba(18,19,24,.5);text-transform:uppercase;letter-spacing:.4px;white-space:nowrap;transition:color .3s}
+
+.step.active .step-label{color:#0C2C91}
+.step.completed .step-label{color:#8A6D1A}
+
+/* --- KONTEN --- */
+.content{padding:0 20px 24px}
+
+.event-card{display:flex;gap:14px;align-items:center;padding:22px 0 18px}
+
+.event-thumb{width:84px;height:84px;border-radius:14px;object-fit:cover;flex-shrink:0;box-shadow:0 6px 16px rgba(18,19,24,.1)}
+
+.event-title{font-size:16px;font-weight:800;line-height:1.35;margin-bottom:8px}
+
+.event-meta{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;opacity:.65;margin-bottom:4px}
+
+.event-meta svg{width:14px;height:14px;stroke:#0C2C91;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+.secure-note{display:flex;align-items:center;gap:10px;background:#E3F9EC;border:1px solid #BBE7CC;color:#0B7A3E;font-size:12px;font-weight:700;padding:12px 14px;border-radius:12px;margin-bottom:10px}
+
+.secure-note svg{width:18px;height:18px;stroke:#0B7A3E;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+.section-title{font-size:17px;font-weight:800;margin:28px 0 16px;color:#121318;display:flex;align-items:center;gap:12px}
+
+.section-title::before{content:'';width:5px;height:20px;background:#0C2C91;border-radius:3px;flex-shrink:0}
+
+.section-note{font-size:12px;opacity:.55;font-weight:600;margin:-10px 0 16px}
+
+.ticket-group{opacity:0;transform:translateY(12px);animation:cardEnter .45s ease forwards;animation-delay:.05s}
+
+@keyframes cardEnter{to{opacity:1;transform:translateY(0)}}
+
+.group-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+
+.group-name{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:#121318}
+
+.group-badge{font-size:10px;font-weight:700;padding:4px 10px;border-radius:999px;letter-spacing:.3px;white-space:nowrap}
+
+.group-badge.onsale{background:#E3F9EC;color:#0B7A3E;border:1px solid #BBE7CC}
+
+/* --- KARTU TIKET (bisa dibeli) --- */
+.ticket-card{position:relative;background:#fff;border:1.5px solid #E5E7EB;border-radius:16px;padding:16px 16px 14px;margin-bottom:16px;transition:border-color .25s,background .25s,box-shadow .25s,transform .2s}
+
+.ticket-card:last-child{margin-bottom:0}
+
+.ticket-card:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(18,19,24,.06)}
+
+.ticket-card.active{border-color:#3160F4;background:#F5F8FF;box-shadow:0 6px 18px rgba(49,96,244,.1)}
+.ticket-card.active:hover{box-shadow:0 8px 22px rgba(49,96,244,.14)}
+
+.ticket-card.vip-card.active{border-color:#D4AF37;background:#FFFDF5;box-shadow:0 6px 18px rgba(212,175,55,.15)}
+.ticket-card.vip-card.active:hover{box-shadow:0 8px 22px rgba(212,175,55,.2)}
+
+.ticket-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:4px}
+
+.ticket-name{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:#121318}
+
+.ticket-tag{font-size:10px;font-weight:700;padding:4px 10px;border-radius:999px;background:#DCE7FF;color:#0C2C91;letter-spacing:.3px;white-space:nowrap}
+
+.ticket-tag.gold{background:linear-gradient(90deg,#FCE28A,#D4AF37);color:#5C4405}
+
+.ticket-perks{list-style:none;margin:10px 0 0}
+
+.ticket-perks li{font-size:12px;color:#121318;opacity:.65;display:flex;gap:8px;margin-bottom:5px;line-height:1.5}
+
+.ticket-perks li::before{content:'\2713';color:#3160F4;font-weight:800;flex-shrink:0}
+
+.ticket-card.vip-card .ticket-perks li::before{color:#D4AF37}
+
+.ticket-divider{position:relative;height:0;border-top:2px dashed #D9DEE7;margin:14px -16px}
+
+.ticket-card.active .ticket-divider{border-top-color:#A9C1FB}
+.ticket-card.vip-card.active .ticket-divider{border-top-color:#E3D096}
+
+.ticket-notch{position:absolute;top:-12px;width:22px;height:22px;background:#fff;border:1.5px solid #E5E7EB}
+
+.ticket-notch.left{left:-1.5px;border-left:none;border-radius:0 50% 50% 0}
+.ticket-notch.right{right:-1.5px;border-right:none;border-radius:50% 0 0 50%}
+
+.ticket-card.active .ticket-notch{border-color:#3160F4;background:#F5F8FF}
+.ticket-card.vip-card.active .ticket-notch{border-color:#D4AF37;background:#FFFDF5}
+
+.ticket-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:2px}
+
+.ticket-price{font-size:19px;font-weight:800;color:#121318}
+
+.ticket-price .per{font-size:11px;font-weight:600;opacity:.5}
+
+.qty-control{display:flex;align-items:center;border:1.5px solid #E5E7EB;border-radius:10px;overflow:hidden;flex-shrink:0;background:#fff;transition:border-color .25s}
+
+.ticket-card.active .qty-control{border-color:#3160F4}
+.ticket-card.vip-card.active .qty-control{border-color:#D4AF37}
+
+.qty-btn{width:38px;height:38px;border:none;background:#F7F8FC;font-size:18px;font-weight:700;cursor:pointer;color:#121318;transition:background .15s,color .15s,transform .12s;display:flex;align-items:center;justify-content:center;line-height:1}
+
+.qty-btn:hover:not(:disabled){background:#DCE7FF;color:#0C2C91}
+.qty-btn:active:not(:disabled){transform:scale(.88)}
+.qty-btn:disabled{opacity:.35;cursor:not-allowed}
+
+.qty-val{min-width:36px;text-align:center;font-weight:800;font-size:14px;transition:transform .15s}
+
+.qty-val.bump{animation:qtyBump .25s ease}
+
+@keyframes qtyBump{0%{transform:scale(1)}40%{transform:scale(1.3)}100%{transform:scale(1)}}
+
+/* --- KARTU PRESALE RINGKAS (sold out, 1 badge saja) --- */
+.soldout-card{margin-top:24px;background:#FAFBFD;border:1.5px dashed #D9DEE7;border-radius:16px;padding:16px 16px 6px;opacity:0;transform:translateY(12px);animation:cardEnter .45s ease forwards;animation-delay:.18s}
+
+.soldout-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid #E5E7EB}
+
+.soldout-title{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:#121318;opacity:.7}
+
+.soldout-badge{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:#B42318;background:#FDECEC;border:1px solid #FAD4D2;padding:4px 10px;border-radius:999px;white-space:nowrap;flex-shrink:0}
+
+.soldout-list{list-style:none}
+
+.soldout-row{display:flex;align-items:center;gap:8px;padding:11px 0;font-size:12.5px}
+
+.soldout-row + .soldout-row{border-top:1px dashed #ECEEF3}
+
+.so-wave{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#121318;opacity:.4;white-space:nowrap}
+
+.so-sep{color:#121318;opacity:.25;font-weight:700}
+
+.so-type{font-weight:700;color:#121318;opacity:.65}
+
+.so-price{margin-left:auto;font-weight:800;color:#121318;opacity:.4;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* --- FOOTER --- */
+.site-footer{margin-top:32px;padding:36px 20px 8px;border-top:1px solid #E5E7EB;text-align:center}
+
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px}
+
+.footer-logo{width:30px;height:30px;border-radius:8px;object-fit:cover}
+
+.footer-name{font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;background:linear-gradient(180deg,#FDF5A6 0%,#FCE28A 30%,#D4AF37 50%,#AA771C 60%,#FDF5A6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 3px rgba(0,0,0,.15))}
+
+.footer-contact{display:flex;flex-direction:column;align-items:center;gap:8px}
+
+.footer-contact-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#121318;opacity:.75;text-decoration:none;transition:opacity .2s}
+.footer-contact-item:hover{opacity:1}
+.footer-contact-item svg{width:16px;height:16px;flex-shrink:0}
+
+.footer-sep{height:1px;background:#E5E7EB;margin:18px 0 14px}
+
+.footer-copy{font-size:11.5px;font-weight:500;color:#121318;opacity:.45}
+
+/* --- STICKY BAR & TOAST --- */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.98);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid #E5E7EB;box-shadow:0 -6px 24px rgba(18,19,24,.06);z-index:998}
+
+.checkout-bar{max-width:480px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;padding:8px 8px 8px 18px;border-radius:14px;box-shadow:0 4px 14px rgba(18,19,24,.06);border:1px solid #E5E7EB}
+
+.total-info{display:flex;flex-direction:column;line-height:1.2;text-align:left}
+
+.total-label{font-size:11px;color:#121318;opacity:.6;font-weight:600}
+
+.total-price{font-size:18px;font-weight:800;color:#121318;transition:transform .15s}
+
+.total-price.bump{animation:totalBump .3s ease}
+
+@keyframes totalBump{0%{transform:scale(1)}30%{transform:scale(1.06)}100%{transform:scale(1)}}
+
+.checkout-btn{border:none;background:#3160F4;color:#fff;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:14px 24px;border-radius:10px;cursor:pointer;box-shadow:0 6px 18px rgba(49,96,244,.35);transition:background .25s,transform .2s,box-shadow .25s;white-space:nowrap;flex-shrink:0}
+
+.checkout-btn:hover:not(:disabled){background:#2456E0;transform:translateY(-2px);box-shadow:0 8px 22px rgba(49,96,244,.45)}
+.checkout-btn:active:not(:disabled){transform:scale(.97)}
+.checkout-btn:disabled{background:#C4CAD4;box-shadow:none;cursor:not-allowed}
+
+.toast{position:fixed;bottom:calc(128px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%) translateY(10px);background:#121318;color:#fff;padding:12px 20px;border-radius:10px;font-size:12px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:1100;max-width:90%;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.25);line-height:1.45}
+
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:480px){.container{box-shadow:none}.checkout-btn{padding:12px 20px;font-size:13px}}
+
+@media(max-width:360px){.step-label{font-size:9px;letter-spacing:.2px}.progress{padding:14px 16px 16px}.ticket-price{font-size:17px}.so-type{font-size:12px}.so-price{font-size:12px}}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}.ticket-group,.soldout-card{opacity:1;transform:none}.step.active .step-dot,.step.active .step-dot::after{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="app-header">
+        <div class="topbar">
+            <a href="index.html" class="nav-btn" aria-label="Kembali ke halaman acara">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            </a>
+            <a href="index.html" class="topbar-logo">
+                <img src="logo.png" alt="Logo ETATIX" class="logo-img" width="32" height="32">
+                <span class="logo-text">ETATIX</span>
+            </a>
+            <a href="tel:+628217003017" class="nav-btn" aria-label="Hubungi Bantuan">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+        </div>
+
+        <div class="progress" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" aria-label="Langkah 1 dari 4: Pilih Tiket">
+            <div class="progress-inner">
+                <div class="progress-track" aria-hidden="true">
+                    <div class="progress-fill"></div>
+                </div>
+                <ol class="progress-steps">
+                    <li class="step active">
+                        <div class="step-dot">
+                            <span class="step-num">1</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">Pilih Tiket</span>
+                    </li>
+                    <li class="step">
+                        <div class="step-dot">
+                            <span class="step-num">2</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">Data Pembeli</span>
+                    </li>
+                    <li class="step">
+                        <div class="step-dot">
+                            <span class="step-num">3</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">Pembayaran</span>
+                    </li>
+                    <li class="step">
+                        <div class="step-dot">
+                            <span class="step-num">4</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">E-Ticket</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div class="event-card">
+            <img src="banner.png" alt="Poster Jatinangor Music Fest IKA UNPAD" class="event-thumb" decoding="async" width="84" height="84">
+            <div>
+                <h1 class="event-title">Jatinangor Music Fest IKA UNPAD</h1>
+                <div class="event-meta">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Sabtu, 19 Sep 2026
+                </div>
+                <div class="event-meta">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Lapangan Merah UNPAD, Jatinangor
+                </div>
+            </div>
+        </div>
+
+        <div class="secure-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Transaksi aman. 100% tiket resmi hanya di etatix.co.id
+        </div>
+
+        <h2 class="section-title">Pilih Tiket</h2>
+        <p class="section-note">Presale 1-3 habis terjual. Maksimal 4 tiket per transaksi.</p>
+
+        <section class="ticket-group">
+            <div class="group-header">
+                <h3 class="group-name">Normal</h3>
+                <span class="group-badge onsale">Tersedia</span>
+            </div>
+
+            <div class="ticket-card" data-ticket="normalFestival">
+                <div class="ticket-head">
+                    <span class="ticket-name">Festival</span>
+                    <span class="ticket-tag">Normal</span>
+                </div>
+                <ul class="ticket-perks">
+                    <li>Akses festival area selama 1 hari acara</li>
+                    <li>Free isi ulang air di Water Station</li>
+                    <li>E-Ticket dikirim melalui email</li>
+                </ul>
+                <div class="ticket-divider" aria-hidden="true">
+                    <span class="ticket-notch left"></span>
+                    <span class="ticket-notch right"></span>
+                </div>
+                <div class="ticket-foot">
+                    <div class="ticket-price">Rp120.000 <span class="per">/pax</span></div>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn qty-minus" aria-label="Kurangi tiket Normal Festival">&minus;</button>
+                        <span class="qty-val" aria-live="polite">0</span>
+                        <button type="button" class="qty-btn qty-plus" aria-label="Tambah tiket Normal Festival">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket-card vip-card" data-ticket="normalVip">
+                <div class="ticket-head">
+                    <span class="ticket-name">VIP Standing</span>
+                    <span class="ticket-tag gold">VIP</span>
+                </div>
+                <ul class="ticket-perks">
+                    <li>Area VIP Standing khusus di depan panggung</li>
+                    <li>Jalur masuk cepat (fast lane)</li>
+                    <li>Merchandise eksklusif JMF</li>
+                    <li>Free flow minuman sepanjang acara</li>
+                </ul>
+                <div class="ticket-divider" aria-hidden="true">
+                    <span class="ticket-notch left"></span>
+                    <span class="ticket-notch right"></span>
+                </div>
+                <div class="ticket-foot">
+                    <div class="ticket-price">Rp275.000 <span class="per">/pax</span></div>
+                    <div class="qty-control">
+                        <button type="button" class="qty-btn qty-minus" aria-label="Kurangi tiket Normal VIP Standing">&minus;</button>
+                        <span class="qty-val" aria-live="polite">0</span>
+                        <button type="button" class="qty-btn qty-plus" aria-label="Tambah tiket Normal VIP Standing">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="soldout-card" aria-label="Gelombang presale telah habis terjual">
+            <div class="soldout-head">
+                <h3 class="soldout-title">Gelombang Presale</h3>
+                <span class="soldout-badge">Sold Out</span>
+            </div>
+            <ul class="soldout-list">
+                <li class="soldout-row">
+                    <span class="so-wave">Presale 1</span><span class="so-sep" aria-hidden="true">&middot;</span>
+                    <span class="so-type">Festival</span>
+                    <span class="so-price">Rp75.000</span>
+                </li>
+                <li class="soldout-row">
+                    <span class="so-wave">Presale 1</span><span class="so-sep" aria-hidden="true">&middot;</span>
+                    <span class="so-type">VIP Standing</span>
+                    <span class="so-price">Rp200.000</span>
+                </li>
+                <li class="soldout-row">
+                    <span class="so-wave">Presale 2</span><span class="so-sep" aria-hidden="true">&middot;</span>
+                    <span class="so-type">Festival</span>
+                    <span class="so-price">Rp85.000</span>
+                </li>
+                <li class="soldout-row">
+                    <span class="so-wave">Presale 2</span><span class="so-sep" aria-hidden="true">&middot;</span>
+                    <span class="so-type">VIP Standing</span>
+                    <span class="so-price">Rp225.000</span>
+                </li>
+                <li class="soldout-row">
+                    <span class="so-wave">Presale 3</span><span class="so-sep" aria-hidden="true">&middot;</span>
+                    <span class="so-type">Festival</span>
+                    <span class="so-price">Rp100.000</span>
+                </li>
+                <li class="soldout-row">
+                    <span class="so-wave">Presale 3</span><span class="so-sep" aria-hidden="true">&middot;</span>
+                    <span class="so-type">VIP Standing</span>
+                    <span class="so-price">Rp250.000</span>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Logo ETATIX" class="footer-logo" width="30" height="30" loading="lazy" decoding="async">
+                <span class="footer-name">ETATIX</span>
+            </div>
+            <div class="footer-contact">
+                <a class="footer-contact-item" href="https://wa.me/628217003017" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    +62 821-7003-017
+                </a>
+                <a class="footer-contact-item" href="mailto:cs@etatix.co.id">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#0C2C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    cs@etatix.co.id
+                </a>
+            </div>
+            <div class="footer-sep" role="separator"></div>
+            <p class="footer-copy">&copy; 2026 ETATIX. Hak Cipta Dilindungi.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<div class="sticky">
+    <div class="checkout-bar">
+        <div class="total-info">
+            <div class="total-label">Total Pembayaran</div>
+            <div class="total-price" id="totalPrice" aria-live="polite">Rp0</div>
+        </div>
+        <button type="button" class="checkout-btn" id="checkoutBtn" disabled aria-label="Lanjutkan ke pengisian data pembeli">Lanjutkan</button>
+    </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+    'use strict';
+
+    var MAX_PER_TICKET = 4;
+    var MAX_TOTAL = 4;
+    var STORAGE_KEY = 'etatix_selection';
+
+    var ticketData = {
+        normalFestival: 120000,
+        normalVip: 275000
+    };
+
+    var ticketIds = ['normalFestival', 'normalVip'];
+    var qty = { normalFestival: 0, normalVip: 0 };
+
+    var cards = document.querySelectorAll('.ticket-card');
+    var totalPriceEl = document.getElementById('totalPrice');
+    var checkoutBtn = document.getElementById('checkoutBtn');
+    var toastEl = document.getElementById('toast');
+    var toastTimer = null;
+    var processing = false;
+
+    function formatRupiah(n) { return 'Rp' + n.toLocaleString('id-ID'); }
+
+    function totalQty() {
+        var s = 0;
+        for (var i = 0; i < ticketIds.length; i++) s += qty[ticketIds[i]];
+        return s;
+    }
+
+    function totalPrice() {
+        var s = 0;
+        for (var i = 0; i < ticketIds.length; i++) s += qty[ticketIds[i]] * ticketData[ticketIds[i]];
+        return s;
+    }
+
+    function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.className = 'toast show';
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toastEl.className = 'toast'; }, 2500);
+    }
+
+    function bumpEl(el) {
+        el.classList.remove('bump');
+        void el.offsetWidth;
+        el.classList.add('bump');
+    }
+
+    function updateUI(changedId) {
+        var total = totalQty();
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            var id = card.getAttribute('data-ticket');
+            var valEl = card.querySelector('.qty-val');
+            var minusBtn = card.querySelector('.qty-minus');
+            var plusBtn = card.querySelector('.qty-plus');
+            valEl.textContent = qty[id];
+            if (qty[id] > 0) { card.classList.add('active'); } else { card.classList.remove('active'); }
+            minusBtn.disabled = qty[id] === 0;
+            plusBtn.disabled = qty[id] >= MAX_PER_TICKET || total >= MAX_TOTAL;
+            if (id === changedId) bumpEl(valEl);
+        }
+        totalPriceEl.textContent = formatRupiah(totalPrice());
+        if (changedId) bumpEl(totalPriceEl);
+        checkoutBtn.disabled = totalPrice() === 0 || processing;
+    }
+
+    function loadSaved() {
+        var saved = null;
+        try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (e) { return; }
+        if (!saved || !saved.qty) return;
+        var loaded = 0;
+        for (var i = 0; i < ticketIds.length; i++) {
+            var id = ticketIds[i];
+            if (typeof saved.qty[id] === 'number') {
+                var v = Math.max(0, Math.min(saved.qty[id], MAX_PER_TICKET));
+                if (loaded + v > MAX_TOTAL) v = MAX_TOTAL - loaded;
+                if (v > 0) { qty[id] = v; loaded += v; }
+            }
+        }
+    }
+
+    for (var c = 0; c < cards.length; c++) {
+        (function (card) {
+            var id = card.getAttribute('data-ticket');
+            card.querySelector('.qty-plus').addEventListener('click', function () {
+                if (processing) return;
+                if (qty[id] >= MAX_PER_TICKET) { showToast('Maksimal ' + MAX_PER_TICKET + ' tiket per kategori'); return; }
+                if (totalQty() >= MAX_TOTAL) { showToast('Maksimal ' + MAX_TOTAL + ' tiket per transaksi'); return; }
+                qty[id]++;
+                updateUI(id);
+            });
+            card.querySelector('.qty-minus').addEventListener('click', function () {
+                if (processing) return;
+                if (qty[id] > 0) { qty[id]--; updateUI(id); }
+            });
+        })(cards[c]);
+    }
+
+    checkoutBtn.addEventListener('click', function () {
+        if (processing) return;
+        if (totalQty() === 0) { showToast('Silakan pilih minimal 1 tiket'); return; }
+        processing = true;
+        checkoutBtn.disabled = true;
+        checkoutBtn.textContent = 'Memuat...';
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ qty: qty })); } catch (e) {}
+        window.location.href = 'form.html';
+    });
+
+    loadSaved();
+    updateUI(null);
+})();
+</script>
+
+</body>
+</html>
