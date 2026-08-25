@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="description" content="Lengkapi data pemesan tiket Jatinangor Music Fest IKA UNPAD - 19 September 2026 di Lapangan Merah UNPAD. ETATIX, platform tiket acara & konser terpercaya.">
+<title>Data Pemesan - Jatinangor Music Fest IKA UNPAD | ETATIX</title>
+<link rel="canonical" href="https://etatix.co.id/form.html">
+<meta property="og:title" content="Data Pemesan - Jatinangor Music Fest IKA UNPAD | ETATIX">
+<meta property="og:description" content="Lengkapi data pemesan untuk melanjutkan pembayaran tiket Jatinangor Music Fest IKA UNPAD.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://etatix.co.id/form.html">
+<meta property="og:image" content="https://etatix.co.id/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data Pemesan - Jatinangor Music Fest IKA UNPAD | ETATIX">
+<meta name="twitter:description" content="Lengkapi data pemesan untuk melanjutkan pembayaran tiket Jatinangor Music Fest IKA UNPAD.">
+<meta name="twitter:image" content="https://etatix.co.id/banner.png">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0C2C91;--accent:#3160F4;--accent-hover:#2456E0;--accent-soft:rgba(49,96,244,.1);--gold:#D4AF37;--bg:#F4F6FA;--card:#fff;--border:#E5E7EB;--text:#1F2937;--text-muted:#6B7280;--text-dim:#9CA3AF;--error:#EF4444;--error-bg:#FEF2F2;--gold-gradient:linear-gradient(180deg,#FDF5A6 0%,#FCE28A 30%,#D4AF37 50%,#AA771C 60%,#FDF5A6 100%)}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);padding-bottom:calc(120px + env(safe-area-inset-bottom,0px));-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased}
+
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+.container{width:100%;max-width:480px;margin:0 auto;background:var(--card);min-height:100vh;min-height:100dvh;box-shadow:0 0 40px rgba(0,0,0,.05);position:relative}
+
+/* --- NAVBAR PUTIH --- */
+.app-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 12px rgba(18,19,24,.07)}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+
+.nav-btn{width:40px;height:40px;border-radius:50%;background:#F7F8FC;border:1px solid #E5E7EB;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,border-color .2s,transform .15s;color:#121318;text-decoration:none;flex-shrink:0}
+
+.nav-btn:hover{background:#DCE7FF;border-color:#DCE7FF;color:#0C2C91;transform:translateY(-1px)}
+.nav-btn:active{transform:scale(.93)}
+
+.nav-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.topbar-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+
+.logo-img{width:32px;height:32px;border-radius:8px;object-fit:cover;box-shadow:0 2px 8px rgba(18,19,24,.12)}
+
+.logo-text{font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#0C2C91}
+
+/* --- PROGRESS --- */
+.progress{position:relative;padding:14px 28px 18px;border-top:1px solid #E5E7EB;background:#fff}
+
+.progress-inner{position:relative}
+
+.progress-track{position:absolute;top:14px;left:15px;right:15px;height:3px;background:#E5E7EB;border-radius:999px;z-index:1}
+
+.progress-fill{height:100%;width:33.3%;background:linear-gradient(90deg,#FDF5A6,#FCE28A 40%,#D4AF37 70%,#B8861A);border-radius:999px;transition:width .7s cubic-bezier(.4,0,.2,1)}
+
+.progress-steps{position:relative;z-index:2;display:flex;justify-content:space-between;list-style:none}
+
+.step{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+
+.step-dot{width:30px;height:30px;border-radius:50%;background:#F7F8FC;border:1.5px solid #E5E7EB;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:rgba(18,19,24,.45);transition:all .3s;position:relative}
+
+.step-num{display:block;line-height:1}
+
+.step-check{display:none;width:14px;height:14px;stroke:#5C4405;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+
+.step.completed .step-dot{background:var(--gold-gradient);border-color:var(--gold);color:#5C4405;box-shadow:0 3px 10px rgba(212,175,55,.4)}
+
+.step.completed .step-num{display:none}
+.step.completed .step-check{display:block}
+
+.step.active .step-dot{background:linear-gradient(180deg,#5B8AFF,var(--accent));border-color:var(--accent);color:#fff;box-shadow:0 0 0 4px rgba(49,96,244,.18),0 4px 14px rgba(49,96,244,.4);animation:stepPulse 2.2s ease-in-out infinite}
+
+.step.active .step-dot::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1.5px solid rgba(49,96,244,.4);animation:stepRing 2.2s ease-out infinite}
+
+@keyframes stepPulse{0%,100%{box-shadow:0 0 0 4px rgba(49,96,244,.18),0 4px 14px rgba(49,96,244,.4)}50%{box-shadow:0 0 0 8px rgba(49,96,244,.1),0 4px 20px rgba(49,96,244,.6)}}
+@keyframes stepRing{0%{transform:scale(.85);opacity:.85}100%{transform:scale(1.5);opacity:0}}
+
+.step-label{font-size:10px;font-weight:700;color:rgba(18,19,24,.5);text-transform:uppercase;letter-spacing:.4px;white-space:nowrap;transition:color .3s}
+
+.step.active .step-label{color:#0C2C91}
+.step.completed .step-label{color:#8A6D1A}
+
+/* --- KONTEN --- */
+.content{padding:24px 20px}
+
+.page-title{font-size:20px;font-weight:800;margin-bottom:4px;color:#111827}
+
+.page-subtitle{font-size:13px;color:var(--text-muted);margin-bottom:24px;line-height:1.5}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin-bottom:20px;box-shadow:0 4px 15px rgba(0,0,0,.03)}
+
+.card-title{font-size:16px;font-weight:800;margin-bottom:16px;color:var(--text);display:flex;align-items:center;gap:10px}
+
+.card-title::before{content:'';width:5px;height:20px;background:var(--primary);border-radius:3px;flex-shrink:0}
+
+.card-title small{font-size:11px;font-weight:600;color:var(--text-dim)}
+
+.event-hero{text-align:center;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+
+.event-hero h2{font-size:18px;font-weight:800;color:var(--text);margin-bottom:12px}
+
+.event-info{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;color:#4B5563;font-size:12px;font-weight:600;background:var(--bg);padding:8px 12px;border-radius:10px}
+
+.event-info div{display:flex;align-items:center;gap:6px}
+
+.event-info svg{color:var(--primary);width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+.summary-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px dashed var(--border);font-size:14px;color:#4B5563}
+
+.summary-row strong{color:var(--text);font-weight:600}
+
+.summary-row.total{font-size:18px;font-weight:800;color:var(--text);border-bottom:none;margin-top:8px;padding-top:12px;border-top:2px solid var(--border)}
+
+.summary-row.total span:last-child{color:var(--accent)}
+
+.form-group{margin-bottom:16px}
+.form-group:last-child{margin-bottom:0}
+
+.form-group label{display:block;font-weight:600;font-size:13px;margin-bottom:8px;color:var(--text)}
+
+.input-icon-wrap{position:relative;display:flex;align-items:center}
+
+.input-icon{position:absolute;left:16px;width:15px;height:15px;color:var(--text-dim);pointer-events:none;transition:color .2s;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+input,select,textarea{width:100%;padding:12px 16px 12px 42px;border-radius:10px;border:1.5px solid var(--border);background:var(--bg);font-size:14px;font-family:'Poppins',sans-serif;transition:border-color .2s,background .2s,box-shadow .2s;color:var(--text)}
+
+textarea{resize:vertical;min-height:80px;padding-left:42px}
+
+select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239CA3AF' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);background:var(--card);box-shadow:0 0 0 3px var(--accent-soft)}
+
+input:focus~.input-icon,select:focus~.input-icon,textarea:focus~.input-icon{color:var(--accent)}
+
+input.error,select.error,textarea.error{border-color:var(--error);background:var(--error-bg);animation:shake .4s ease}
+
+input.error:focus,select.error:focus,textarea.error:focus{box-shadow:0 0 0 3px rgba(239,68,68,.1)}
+
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+
+.check{display:flex;gap:12px;margin-top:12px;align-items:flex-start;background:var(--bg);padding:12px;border-radius:10px;border:1px solid var(--border);transition:border-color .2s}
+
+.check:first-of-type{margin-top:0}
+
+.check input[type="checkbox"]{width:20px;height:20px;min-width:20px;accent-color:var(--accent);cursor:pointer;margin-top:1px;box-shadow:none;padding:0;border:none;background:none}
+
+.check label{font-size:12px;color:#4B5563;cursor:pointer;line-height:1.5;font-weight:500}
+
+.holder-section-title{font-size:17px;font-weight:800;margin-bottom:4px;color:#111827;display:flex;align-items:center;gap:12px}
+
+.holder-section-title::before{content:'';width:5px;height:20px;background:var(--primary);border-radius:3px;flex-shrink:0}
+
+.holder-section-sub{font-size:13px;color:var(--text-muted);margin-bottom:16px;line-height:1.5}
+
+.holder-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 20px 20px 24px;margin-bottom:16px;box-shadow:0 4px 15px rgba(0,0,0,.03);position:relative;overflow:hidden;opacity:0;transform:translateY(12px);animation:holderEnter .4s ease forwards}
+
+.holder-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:linear-gradient(180deg,var(--accent),#2143D8)}
+
+@keyframes holderEnter{to{opacity:1;transform:translateY(0)}}
+
+.holder-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px dashed var(--border)}
+
+.holder-badge{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#2143D8);color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(49,96,244,.35);flex-shrink:0}
+
+.holder-info{flex:1}
+
+.holder-title{font-size:15px;font-weight:700;color:var(--text);line-height:1.3}
+
+.holder-sub{font-size:11px;color:var(--text-dim);font-weight:500;margin-top:2px}
+
+.same-check{display:flex;align-items:center;gap:8px;margin-bottom:14px;padding:10px 12px;background:#F0F5FF;border-radius:10px;border:1px dashed var(--accent);cursor:pointer;font-size:12px;font-weight:600;color:var(--accent);transition:background .2s}
+
+.same-check:hover{background:#E3EDFF}
+
+.same-check input[type="checkbox"]{width:16px;height:16px;min-width:16px;accent-color:var(--accent);cursor:pointer;box-shadow:none;padding:0;margin:0;border:none;background:none}
+
+.holder-card input[readonly]{opacity:.55;cursor:not-allowed;background:var(--bg)!important}
+
+/* --- STICKY & TOMBOL --- */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.98);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--border);box-shadow:0 -6px 24px rgba(0,0,0,.06);z-index:998}
+
+.flying-box{background:var(--card);padding:6px;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);max-width:480px;margin:0 auto;display:flex;align-items:center;justify-content:center;border:1px solid var(--border)}
+
+.btn-lanjut{width:100%;border:none;background:var(--accent);color:#fff;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:14px 28px;border-radius:10px;cursor:pointer;box-shadow:0 6px 18px rgba(49,96,244,.35);transition:background .25s,transform .2s,box-shadow .25s;white-space:nowrap;display:flex;justify-content:center;align-items:center;gap:8px}
+
+.btn-lanjut svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+.btn-lanjut:hover:not(:disabled){background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 22px rgba(49,96,244,.45)}
+.btn-lanjut:active:not(:disabled){transform:scale(.97)}
+.btn-lanjut:disabled{background:#C4CAD4;box-shadow:none;cursor:not-allowed;transform:none}
+
+.btn-spinner{width:18px;height:18px;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite;flex-shrink:0}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* --- FOOTER --- */
+.site-footer{text-align:center;padding:36px 20px 8px;margin-top:20px;border-top:1px solid var(--border)}
+
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px}
+
+.footer-logo{width:30px;height:30px;border-radius:8px;object-fit:cover}
+
+.footer-name{font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 3px rgba(0,0,0,.15))}
+
+.footer-contact{display:flex;flex-direction:column;align-items:center;gap:8px}
+
+.footer-contact-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--text);opacity:.75;text-decoration:none;transition:opacity .2s}
+.footer-contact-item:hover{opacity:1}
+.footer-contact-item svg{width:16px;height:16px;flex-shrink:0}
+
+.footer-sep{height:1px;background:var(--border);margin:18px 0 14px}
+
+.footer-copy{font-size:11.5px;font-weight:500;color:var(--text);opacity:.45}
+
+/* --- LOADING & TOAST --- */
+.loading-overlay{visibility:hidden;opacity:0;position:fixed;inset:0;background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:99999;display:flex;justify-content:center;align-items:center;flex-direction:column;transition:opacity .3s,visibility .3s}
+
+.loading-overlay.active{visibility:visible;opacity:1}
+
+.spinner-box{width:70px;height:70px;display:flex;justify-content:center;align-items:center;border-radius:50%;background:var(--card);box-shadow:0 10px 30px rgba(0,0,0,.1);margin-bottom:20px}
+
+.spinner{width:35px;height:35px;border:4px solid var(--accent-soft);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+
+.loading-text{font-size:16px;font-weight:700;color:var(--text)}
+
+.loading-sub{font-size:13px;color:var(--text-muted);margin-top:8px}
+
+.toast{position:fixed;bottom:calc(128px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%) translateY(10px);background:#121318;color:#fff;padding:12px 20px;border-radius:10px;font-size:12px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:1100;max-width:90%;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.25);line-height:1.45}
+
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:480px){.container{box-shadow:none}.btn-lanjut{padding:12px 20px;font-size:13px}}
+
+@media(max-width:360px){.step-label{font-size:9px;letter-spacing:.2px}.progress{padding:14px 16px 16px}}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}.step.active .step-dot,.step.active .step-dot::after{animation:none}.holder-card{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="app-header">
+        <div class="topbar">
+            <a href="tiket.html" class="nav-btn" aria-label="Kembali ke Pilih Tiket">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            </a>
+            <a href="index.html" class="topbar-logo">
+                <img src="logo.png" alt="Logo ETATIX" class="logo-img" width="32" height="32">
+                <span class="logo-text">ETATIX</span>
+            </a>
+            <a href="tel:+628217003017" class="nav-btn" aria-label="Hubungi Bantuan">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+        </div>
+
+        <div class="progress" role="progressbar" aria-valuenow="2" aria-valuemin="1" aria-valuemax="4" aria-label="Langkah 2 dari 4: Data Pembeli">
+            <div class="progress-inner">
+                <div class="progress-track" aria-hidden="true">
+                    <div class="progress-fill"></div>
+                </div>
+                <ol class="progress-steps">
+                    <li class="step completed">
+                        <div class="step-dot">
+                            <span class="step-num">1</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">Pilih Tiket</span>
+                    </li>
+                    <li class="step active">
+                        <div class="step-dot">
+                            <span class="step-num">2</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">Data Pembeli</span>
+                    </li>
+                    <li class="step">
+                        <div class="step-dot">
+                            <span class="step-num">3</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">Pembayaran</span>
+                    </li>
+                    <li class="step">
+                        <div class="step-dot">
+                            <span class="step-num">4</span>
+                            <svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <span class="step-label">E-Ticket</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <h1 class="page-title">Form Pemesanan Tiket</h1>
+        <p class="page-subtitle">Lengkapi data berikut sebelum melanjutkan ke pembayaran.</p>
+
+        <section class="card">
+            <div class="event-hero">
+                <h2>JATINANGOR MUSIC FEST IKA UNPAD</h2>
+                <div class="event-info">
+                    <div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Sabtu, 19 Sep 2026</div>
+                    <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lapangan Merah UNPAD, Jatinangor</div>
+                </div>
+            </div>
+
+            <div class="card-title">Ringkasan Pesanan</div>
+            <div id="summaryContent"></div>
+        </section>
+
+        <section class="card">
+            <div class="card-title">Data Pemesan <small>(Pemegang Tiket #1)</small></div>
+
+            <div class="form-group">
+                <label for="nama">Nama Lengkap (sesuai identitas)</label>
+                <div class="input-icon-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <input id="nama" type="text" placeholder="Masukkan nama lengkap" autocomplete="name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="identitas">Jenis Identitas</label>
+                <div class="input-icon-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2"/><path d="M5.5 16c.6-1.2 1.5-1.8 2.5-1.8s1.9.6 2.5 1.8"/><line x1="14" y1="9" x2="19" y2="9"/><line x1="14" y1="13" x2="17" y2="13"/></svg>
+                    <select id="identitas" required>
+                        <option value="">Pilih Jenis Identitas</option>
+                        <option value="KTP">KTP</option>
+                        <option value="SIM">SIM</option>
+                        <option value="Paspor">Paspor</option>
+                        <option value="Kartu Pelajar">Kartu Pelajar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nomorId">Nomor Identitas</label>
+                <div class="input-icon-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+                    <input id="nomorId" type="text" placeholder="Masukkan nomor identitas" maxlength="20" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Aktif</label>
+                <div class="input-icon-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <input id="email" type="email" placeholder="contoh@email.com" autocomplete="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="wa">No. WhatsApp Aktif</label>
+                <div class="input-icon-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <input id="wa" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat / Tempat Tinggal</label>
+                <div class="input-icon-wrap">
+                    <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="1 6 8 3 16 6 23 3 23 18 16 21 8 18 1 21"/><line x1="8" y1="3" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="21"/></svg>
+                    <textarea id="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+                </div>
+            </div>
+        </section>
+
+        <div id="holderContainer" aria-live="polite"></div>
+
+        <section class="card">
+            <div class="card-title">Persetujuan</div>
+            <div class="check">
+                <input type="checkbox" id="setuju1">
+                <label for="setuju1">Data yang saya isi adalah benar dan dapat dipertanggungjawabkan.</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="setuju2">
+                <label for="setuju2">Saya menyetujui syarat dan ketentuan acara serta kebijakan privasi.</label>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Logo ETATIX" class="footer-logo" width="30" height="30" loading="lazy" decoding="async">
+                <span class="footer-name">ETATIX</span>
+            </div>
+            <div class="footer-contact">
+                <a class="footer-contact-item" href="https://wa.me/628217003017" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    +62 821-7003-017
+                </a>
+                <a class="footer-contact-item" href="mailto:cs@etatix.co.id">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#0C2C91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    cs@etatix.co.id
+                </a>
+            </div>
+            <div class="footer-sep" role="separator"></div>
+            <p class="footer-copy">&copy; 2026 ETATIX. Hak Cipta Dilindungi.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<div class="sticky">
+    <div class="flying-box">
+        <button type="button" class="btn-lanjut" id="lanjutBtn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span>Lanjut ke Pembayaran</span>
+        </button>
+    </div>
+</div>
+
+<div id="loadingOverlay" class="loading-overlay" aria-hidden="true">
+    <div class="spinner-box"><div class="spinner"></div></div>
+    <div class="loading-text">Memproses Pesanan...</div>
+    <div class="loading-sub">Mohon tunggu sebentar</div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+    'use strict';
+
+    var SELECTION_KEY = 'etatix_selection';
+    var DRAFT_KEY = 'etatix_draft_form';
+    var DRAFT_HOLDERS_KEY = 'etatix_draft_holders';
+    var PEMESAN_KEY = 'data_pemesan';
+
+    var TICKET_DATA = {
+        normalFestival: { label: 'Festival (Normal)', price: 120000 },
+        normalVip:      { label: 'VIP Standing (Normal)', price: 275000 }
+    };
+
+    var TICKET_IDS = ['normalFestival', 'normalVip'];
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    var PHONE_RE = /^(\+62|62|0)8\d{7,12}$/;
+
+    var ICON_USER = '<svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+    var ICON_MAIL = '<svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>';
+    var ICON_PHONE = '<svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>';
+
+    function closestCard(el) {
+        if (el.closest) return el.closest('.holder-card');
+        var node = el;
+        while (node && node !== document.body) {
+            if (node.className && (' ' + node.className + ' ').indexOf(' holder-card ') !== -1) return node;
+            node = node.parentNode;
+        }
+        return null;
+    }
+
+    var selection = null;
+    try { selection = JSON.parse(localStorage.getItem(SELECTION_KEY)); } catch (e) {}
+
+    if (!selection || !selection.qty) { window.location.href = 'tiket.html'; return; }
+
+    var items = [];
+    var jumlahTiket = 0;
+    var totalHarga = 0;
+
+    for (var s = 0; s < TICKET_IDS.length; s++) {
+        var sid = TICKET_IDS[s];
+        var q = Math.max(0, Math.min(selection.qty[sid] || 0, 4));
+        if (q > 0) {
+            items.push({ nama: TICKET_DATA[sid].label, qty: q, harga: TICKET_DATA[sid].price });
+            jumlahTiket += q;
+            totalHarga += q * TICKET_DATA[sid].price;
+        }
+    }
+
+    if (!items.length || !jumlahTiket) { window.location.href = 'tiket.html'; return; }
+
+    var summaryHtml = '';
+    var jenisLabels = [];
+
+    for (var m = 0; m < items.length; m++) {
+        var item = items[m];
+        var sub = item.qty * item.harga;
+        summaryHtml += '<div class="summary-row" style="font-size:13px"><span>' + item.nama + ' &times; ' + item.qty + '</span><strong>Rp' + sub.toLocaleString('id-ID') + '</strong></div>';
+        jenisLabels.push(item.nama + ' x ' + item.qty);
+    }
+
+    summaryHtml += '<div class="summary-row"><span>Jumlah Tiket</span><strong>' + jumlahTiket + ' Tiket</strong></div>';
+    summaryHtml += '<div class="summary-row total"><span>Total Bayar</span><span>Rp' + totalHarga.toLocaleString('id-ID') + '</span></div>';
+
+    document.getElementById('summaryContent').innerHTML = summaryHtml;
+
+    var jenisTiketText = jenisLabels.join(', ');
+
+    var namaEl = document.getElementById('nama');
+    var identitasEl = document.getElementById('identitas');
+    var nomorIdEl = document.getElementById('nomorId');
+    var emailEl = document.getElementById('email');
+    var waEl = document.getElementById('wa');
+    var alamatEl = document.getElementById('alamat');
+    var setuju1El = document.getElementById('setuju1');
+    var setuju2El = document.getElementById('setuju2');
+    var lanjutBtn = document.getElementById('lanjutBtn');
+    var loadingEl = document.getElementById('loadingOverlay');
+    var toastEl = document.getElementById('toast');
+    var holderContainer = document.getElementById('holderContainer');
+
+    var wajibFields = [namaEl, identitasEl, nomorIdEl, emailEl, waEl, alamatEl];
+    var toastTimer = null;
+    var processing = false;
+
+    function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.className = 'toast show';
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toastEl.className = 'toast'; }, 3000);
+    }
+
+    function clearError(f) { f.classList.remove('error'); }
+
+    function scrollToFirstError() {
+        var el = document.querySelector('.error');
+        if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.focus(); }
+    }
+
+    function saveDraft() {
+        try { localStorage.setItem(DRAFT_KEY, JSON.stringify({ nama: namaEl.value, identitas: identitasEl.value, nomorId: nomorIdEl.value, email: emailEl.value, wa: waEl.value, alamat: alamatEl.value })); } catch (e) {}
+    }
+
+    function restoreDraft() {
+        try {
+            var d = JSON.parse(localStorage.getItem(DRAFT_KEY));
+            if (d) { namaEl.value = d.nama || ''; identitasEl.value = d.identitas || ''; nomorIdEl.value = d.nomorId || ''; emailEl.value = d.email || ''; waEl.value = d.wa || ''; alamatEl.value = d.alamat || ''; }
+        } catch (e) {}
+    }
+
+    restoreDraft();
+
+    for (var w = 0; w < wajibFields.length; w++) {
+        (function (f) {
+            f.addEventListener('input', function () { clearError(this); saveDraft(); });
+            f.addEventListener('change', function () { clearError(this); saveDraft(); });
+        })(wajibFields[w]);
+    }
+
+    function saveHoldersDraft() {
+        var data = [];
+        var cards = holderContainer.querySelectorAll('.holder-card');
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            data.push({
+                index: parseInt(card.querySelector('.h-nama').getAttribute('data-holder'), 10),
+                nama: card.querySelector('.h-nama').value,
+                email: card.querySelector('.h-email').value,
+                wa: card.querySelector('.h-wa').value,
+                same: card.querySelector('.same-pemesan').checked
+            });
+        }
+        try { localStorage.setItem(DRAFT_HOLDERS_KEY, JSON.stringify(data)); } catch (e) {}
+    }
+
+    function toggleReadOnly(card, locked) {
+        var classes = ['h-nama', 'h-email', 'h-wa'];
+        for (var i = 0; i < classes.length; i++) {
+            var inp = card.querySelector('.' + classes[i]);
+            if (locked) { inp.setAttribute('readonly', 'readonly'); } else { inp.removeAttribute('readonly'); }
+        }
+    }
+
+    function syncSameAsPemesan() {
+        var boxes = holderContainer.querySelectorAll('.same-pemesan:checked');
+        for (var i = 0; i < boxes.length; i++) {
+            var card = closestCard(boxes[i]);
+            if (!card) continue;
+            card.querySelector('.h-nama').value = namaEl.value;
+            card.querySelector('.h-email').value = emailEl.value;
+            card.querySelector('.h-wa').value = waEl.value;
+        }
+        saveHoldersDraft();
+    }
+
+    var syncFields = [namaEl, emailEl, waEl];
+    for (var y = 0; y < syncFields.length; y++) {
+        syncFields[y].addEventListener('input', syncSameAsPemesan);
+    }
+
+    function generateHolders(count) {
+        holderContainer.innerHTML = '';
+        if (count <= 1) return;
+
+        var tw = document.createElement('div');
+        tw.style.marginBottom = '16px';
+        tw.innerHTML = '<div class="holder-section-title">Data Pemegang Tiket</div><div class="holder-section-sub">Setiap tiket wajib memiliki data pemegang. Tiket #1 mengikuti data pemesan.</div>';
+        holderContainer.appendChild(tw);
+
+        for (var i = 2; i <= count; i++) {
+            (function (idx) {
+                var card = document.createElement('div');
+                card.className = 'holder-card';
+                card.style.animationDelay = (0.08 * (idx - 2)) + 's';
+                card.innerHTML = '<div class="holder-head"><div class="holder-badge">' + idx + '</div><div class="holder-info"><div class="holder-title">Data Pemegang Tiket #' + idx + '</div><div class="holder-sub">Tiket ke-' + idx + ' dari ' + count + '</div></div></div>'
+                    + '<label class="same-check"><input type="checkbox" class="same-pemesan" data-holder="' + idx + '">Sama dengan Data Pemesan</label>'
+                    + '<div class="form-group"><label for="hNama' + idx + '">Nama Lengkap</label><div class="input-icon-wrap">' + ICON_USER + '<input class="h-nama" id="hNama' + idx + '" data-holder="' + idx + '" type="text" placeholder="Nama lengkap pemegang tiket #' + idx + '"></div></div>'
+                    + '<div class="form-group"><label for="hEmail' + idx + '">E-mail Aktif</label><div class="input-icon-wrap">' + ICON_MAIL + '<input class="h-email" id="hEmail' + idx + '" data-holder="' + idx + '" type="email" placeholder="email@contoh.com"></div></div>'
+                    + '<div class="form-group"><label for="hWa' + idx + '">No. WhatsApp</label><div class="input-icon-wrap">' + ICON_PHONE + '<input class="h-wa" id="hWa' + idx + '" data-holder="' + idx + '" type="tel" placeholder="08xxxxxxxxxx"></div></div>';
+                holderContainer.appendChild(card);
+
+                var inputs = card.querySelectorAll('.h-nama,.h-email,.h-wa');
+                for (var k = 0; k < inputs.length; k++) {
+                    (function (inp) {
+                        inp.addEventListener('input', function () { clearError(this); saveHoldersDraft(); });
+                        inp.addEventListener('change', saveHoldersDraft);
+                    })(inputs[k]);
+                }
+
+                card.querySelector('.same-pemesan').addEventListener('change', function () {
+                    toggleReadOnly(card, this.checked);
+                    if (this.checked) {
+                        card.querySelector('.h-nama').value = namaEl.value;
+                        card.querySelector('.h-email').value = emailEl.value;
+                        card.querySelector('.h-wa').value = waEl.value;
+                    }
+                    saveHoldersDraft();
+                });
+            })(i);
+        }
+
+        try {
+            var saved = JSON.parse(localStorage.getItem(DRAFT_HOLDERS_KEY));
+            if (saved && saved.length) {
+                for (var j = 0; j < saved.length; j++) {
+                    (function (d) {
+                        var inp = holderContainer.querySelector('.h-nama[data-holder="' + d.index + '"]');
+                        if (inp) {
+                            var c = closestCard(inp);
+                            c.querySelector('.h-nama').value = d.nama || '';
+                            c.querySelector('.h-email').value = d.email || '';
+                            c.querySelector('.h-wa').value = d.wa || '';
+                            if (d.same) { c.querySelector('.same-pemesan').checked = true; toggleReadOnly(c, true); }
+                        }
+                    })(saved[j]);
+                }
+            }
+        } catch (e) {}
+    }
+
+    generateHolders(jumlahTiket);
+
+    lanjutBtn.addEventListener('click', function () {
+        if (processing) return;
+
+        var isValid = true;
+        for (var i = 0; i < wajibFields.length; i++) clearError(wajibFields[i]);
+
+        for (var v = 0; v < wajibFields.length; v++) {
+            if (!wajibFields[v].value || !wajibFields[v].value.replace(/^\s+|\s+$/g, '')) { wajibFields[v].classList.add('error'); isValid = false; }
+        }
+
+        var emailVal = emailEl.value.replace(/^\s+|\s+$/g, '');
+        var waVal = waEl.value.replace(/^\s+|\s+$/g, '').replace(/[\s\-]/g, '');
+
+        if (emailVal && !EMAIL_RE.test(emailVal)) { emailEl.classList.add('error'); isValid = false; }
+        if (waVal && !PHONE_RE.test(waVal)) { waEl.classList.add('error'); isValid = false; }
+
+        if (!isValid) { showToast('Mohon lengkapi semua data wajib dengan benar.'); scrollToFirstError(); return; }
+
+        var holdersData = [];
+        var holdersValid = true;
+
+        if (jumlahTiket > 1) {
+            var cards = holderContainer.querySelectorAll('.holder-card');
+            for (var h = 0; h < cards.length; h++) {
+                var card = cards[h];
+                var idx = parseInt(card.querySelector('.h-nama').getAttribute('data-holder'), 10);
+                var hN = card.querySelector('.h-nama');
+                var hE = card.querySelector('.h-email');
+                var hW = card.querySelector('.h-wa');
+                clearError(hN); clearError(hE); clearError(hW);
+
+                var nVal = hN.value.replace(/^\s+|\s+$/g, '');
+                var eVal = hE.value.replace(/^\s+|\s+$/g, '');
+                var pVal = hW.value.replace(/^\s+|\s+$/g, '').replace(/[\s\-]/g, '');
+
+                var ok = true;
+                if (!nVal) { hN.classList.add('error'); ok = false; }
+                if (!eVal || !EMAIL_RE.test(eVal)) { hE.classList.add('error'); ok = false; }
+                if (!pVal || !PHONE_RE.test(pVal)) { hW.classList.add('error'); ok = false; }
+                if (!ok) holdersValid = false;
+
+                holdersData.push({ tiket: idx, nama: nVal, email: eVal, wa: pVal });
+            }
+
+            if (!holdersValid) {
+                showToast('Mohon lengkapi data pemegang tiket dengan benar.');
+                var fe = holderContainer.querySelector('.error');
+                if (fe) { fe.scrollIntoView({ behavior: 'smooth', block: 'center' }); fe.focus(); }
+                return;
+            }
+        }
+
+        if (!setuju1El.checked || !setuju2El.checked) {
+            showToast('Harap centang seluruh kotak persetujuan.');
+            if (!setuju1El.checked) { setuju1El.focus(); } else { setuju2El.focus(); }
+            return;
+        }
+
+        processing = true;
+        lanjutBtn.disabled = true;
+        lanjutBtn.innerHTML = '<div class="btn-spinner"></div><span>Memproses...</span>';
+        loadingEl.className = 'loading-overlay active';
+        loadingEl.setAttribute('aria-hidden', 'false');
+
+        var cartItems = [];
+        for (var c = 0; c < items.length; c++) {
+            cartItems.push({ jenis: items[c].nama, qty: items[c].qty, harga: items[c].harga });
+        }
+
+        var dataPemesan = {
+            nama: namaEl.value.replace(/^\s+|\s+$/g, ''),
+            wa: waVal,
+            email: emailVal,
+            identitas: identitasEl.value,
+            nomorId: nomorIdEl.value.replace(/^\s+|\s+$/g, ''),
+            alamat: alamatEl.value.replace(/^\s+|\s+$/g, ''),
+            holders: holdersData,
+            cart: { items: cartItems, totalQty: jumlahTiket, totalPrice: totalHarga }
+        };
+
+        try { localStorage.setItem(PEMESAN_KEY, JSON.stringify(dataPemesan)); } catch (e) {}
+
+        var pemegangText = 'Hanya 1 tiket (sama dengan pemesan)';
+        if (holdersData.length) {
+            pemegangText = '';
+            for (var p = 0; p < holdersData.length; p++) {
+                if (p > 0) pemegangText += '\n';
+                pemegangText += '#' + holdersData[p].tiket + ': ' + holdersData[p].nama + ' | ' + holdersData[p].email + ' | ' + holdersData[p].wa;
+            }
+        }
+
+        if (window.fetch) {
+            try {
+                window.fetch('https://formspree.io/f/xrpzwqgb', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({
+                        nama: dataPemesan.nama,
+                        identitas: dataPemesan.identitas,
+                        nomor_id: dataPemesan.nomorId,
+                        email: dataPemesan.email,
+                        whatsapp: dataPemesan.wa,
+                        alamat: dataPemesan.alamat,
+                        pemegang_tiket: pemegangText,
+                        jenis_tiket: jenisTiketText,
+                        jumlah_tiket: jumlahTiket,
+                        total_bayar: totalHarga
+                    })
+                }).catch(function () {});
+            } catch (err) {}
+        }
+
+        setTimeout(function () { window.location.href = 'qris.html'; }, 1500);
+    });
+
+})();
+</script>
+
+</body>
+</html>
